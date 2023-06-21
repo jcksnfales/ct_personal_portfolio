@@ -10,8 +10,51 @@
 <link rel="stylesheet" href="assets/style/main.css">
 <title>Jackson Fales - Contact</title>
 </head>
-<body>
-
+<body class="bg-black">
+    <!-- NAVIGATION -->
+    <nav class="navbar navbar-expand-lg bg-black navbar-dark py-3 fixed-top">
+        <div class="container w-75 px-0">
+            <a href="index.html" class="navbar-brand display-1">Jackson Fales</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav-links">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="nav-links">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item px-2">
+                        <a href="projects.html" class="nav-link">Projects</a>
+                    </li>
+                    <li class="nav-item px-2">
+                        <a href="about.html" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item ps-2">
+                        <a href="form.html" class="nav-link active" title="You are here.">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="bg-black text-dark text-nowrap py-2 my-1">this is a hidden spacer :)</div>
+    
+    <div class="container-fluid w-75 px-0">
+        <h1 class="text-center text-white mt-4 mb-4"><b>CONTACT</b></h1>
+    </div>
+    <form class="w-75 mx-auto text-secondary">
+        <div class="mb-3">
+            <label for="input-name" class="form-label">Name</label>
+            <input type="text" class="form-control" id="input-name">
+        </div>
+        <div class="mb-3">
+            <label for="input-email" class="form-label">Email Address</label>
+            <input type="email" class="form-control" id="input-email">
+        </div>
+        <div class="mb-3">
+            <label for="input-message" class="form-label">Message</label>
+            <textarea id="input-message" rows="6" class="form-control"></textarea>
+        </div>
+        <div class="row w-25 mx-auto">
+            <button onclick="alert(`This form doesn't actually function. If you'd like to contact me, email me at jcksnfales@gmail.com`)" type="submit" class="btn btn-primary">Submit</button>
+        </div>
+    </form>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
 </body>
